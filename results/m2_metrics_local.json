@@ -1,0 +1,59 @@
+{
+  "split": {
+    "train": "1950-2018",
+    "val": "2019-2021",
+    "test": "2022-2024 (not evaluated in M2)"
+  },
+  "n_races": {
+    "train": 997,
+    "val": 60,
+    "test": 68
+  },
+  "n_rows": {
+    "train": 24200,
+    "val": 1200
+  },
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "epochs": 40,
+  "batch_size": 256,
+  "lr": 0.05,
+  "features": [
+    "grid_adj",
+    "cons_pts_frac"
+  ],
+  "pole_acc": {
+    "train": 0.4182547628879547,
+    "val": 0.4833333194255829
+  },
+  "random_acc_val": 0.04999999999999998,
+  "logreg_acc_val_mean": 0.48999999165534974,
+  "logreg_acc_val_std": 0.009128716909341411,
+  "logreg_acc_train_mean": 0.4222667932510376,
+  "logreg_bce_val_mean": 0.11712601780891418,
+  "logreg_bce_val_std": 7.123582808046992e-05,
+  "best_epochs": [
+    34,
+    29,
+    35,
+    37,
+    32
+  ],
+  "time_s": {
+    "data": 0.017157832999999734,
+    "train": 2.7257570419999997,
+    "total": 5.0469705000000005
+  },
+  "env": {
+    "python": "3.9.6",
+    "torch": "2.8.0",
+    "pandas": "2.3.3",
+    "device": "cpu",
+    "platform": "macOS-26.7.2-arm64-arm-64bit"
+  }
+}
